@@ -39,62 +39,85 @@ main {
 }
 
 
-/* header */
-header {
+/******* comienzo header ***********/
+.header {
     background-color: #74C69D;
-
-
-}
-
-.navbar {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 100%;
     color: #ffffff;
     text-shadow: 1px 1px 3px #2646537b;
     font-family: 'Alef', sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
 }
-.brand{
-    display: flex;
-    flex-direction: row;
-    /* align-items: center;
-    justify-content: center; */
-    justify-content: center;
-    margin: 0.5rem;
+
+.brand {
+    width: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-areas:
+    "logo title"
+    "logo subtitle";
 }
 
 .brand__logo {
-    min-width: 80px;
-    display: block;
+    max-width: 35vw;
+    margin: 5px;
+    grid-area: logo;
+    justify-self: right;
+    align-self: center;
+}
+
+.brand__logo:hover{
+    transform: scale(1.2);
 }
 
 .brand__title {
-    padding: 5px;
-    margin: 0.5rem;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 0.7rem;
-}
-
-.__title__title {
-    font-size: 1.8rem;
+    padding: 0.2rem;
+    justify-self: left;
+    align-self: flex-end;
 }
 
 .brand__subtitle {
-    font-size: 1rem;
-    text-align: center;
+    padding: 0.2rem;
+    font-size: 0.95rem;
+    justify-self: left;
+    align-self: flex-start;
+}
+
+.navbar__list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+.home{
+    grid-column: 1/3;
+}
+
+.clases{
+    grid-column: 3/5;
+}
+
+.galeria{
+    grid-column: 5/7;
+}
+
+.nosotros{
+    grid-column: -6/-4;
+    padding-right: 1rem;
+}
+
+.contacto{
+    grid-column: -4/-2;
+    padding-left: 1rem;
 }
 
 .navbar__list li {
     font-size: 1.4rem;
     font-weight: bolder;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
 }
 
 .navbar__list li:hover {
@@ -113,20 +136,19 @@ header {
 nav a {
     color: #ffffff;
 }
+/********* fin header **********/
 
-nav li {
-    display: inline-block;
-}
-
+/********* comienzo cover **********/
 .cover {
     background-color: #74C69D;
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
 }
 
 .cover__legend {
-    padding: 1rem;
+    padding: 0.7rem;
 }
 
 .cover__legend__title {
@@ -138,25 +160,19 @@ nav li {
 
 .cover__legend__text {
     font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
     color: #ffffff;
     text-align: center;
     font-size: 1.2rem;
-    max-width: 30vw;
     margin-top: 1rem;
 }
 
 .cover__img {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
+    width: 85%;
+    margin: 1.5rem auto 1rem;
 }
 
-.cover__img__img {
-    max-width: 80%;
-}
-
-/* FIN DEL HEADER */
+/********* fin cover **********/
 
 /* COMIENZO ARTÍCULOS DEL MAIN */
 
