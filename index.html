@@ -16,7 +16,7 @@
 <!-- COMIENZO DE NAVBAR -->
     <nav class="navbar navbar-expand-md header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./img/logo.svg" alt="logo de Lotus"
+            <a class="navbar-brand offset-md-1" href="index.html"><img src="./img/logo.svg" alt="logo de Lotus"
                 class="brand__logo"><h1 class="brand__title">LOTUS</h1></a>
             <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -24,7 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse navbar__list" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 navbar__list">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 offset-md-1 offset-xl-4 navbar__list">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -48,9 +48,10 @@
 
     
     <!-- comienzo del cover -->
-    <section class="cover">
+    <section class="cover container-fluid pb-2">
         <!-- comienzo texto header -->
-        <div class="cover__legend">
+        <div class="row">
+        <div class="cover__legend col-12 col-md-5">
             <h3 class="cover__legend__title">Somos la casa del Yoga en Santa Fe</h3>
             <p class="cover__legend__text">"Una mente pacífica, centrada y no focalizada en dañar a otros,<br> es
                 más
@@ -58,39 +59,44 @@
         </div>
         <img src="./img/cover-img.svg"
             alt="Ilustración de personas practicando Yoga en distintas posiciones con la palabra Yoga detrás"
-            class="cover__img">
+            class="col-12 col-md-7">
+        </div>
     </section>
     <!-- fin del cover -->
 
     <!-- Comienzo del main -->
     <main>
         <!-- comienzo zona de articulos de home -->
-        <section class="articles">
+        <section class="articles container">
             <!-- comienzo articulo 1 -->
-            <article class="articles__article" data-aos="zoom-in-up"  data-aos-duration="1000">
+            <article class="articles__article row" data-aos="zoom-in-up"  data-aos-duration="1000">
                 <img src="./img/home-article-1-img.svg" alt="Ilustración de una mujer practicando yoga"
-                    class="articles__article__img">
+                    class="articles__article__img col-12 col-md-7">
+                <div class="articles__article__legend col-12 col-md-5 mt-3">
                 <h2 class="articles__article__title">¿Por qué practicar Yoga?</h2>
                 <p class="articles__article__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                     ducimus doloribus ex quasi eveniet quidem nulla, consequuntur sapiente unde, velit rem quae
                     dolor
                     facilis, laudantium ut quia blanditiis quis natus.</p>
+                </div>
             </article>
             </div>
             <!-- fin articulo 1 -->
 
             <!-- comienzo articulo 2 -->
-            <article class="articles__article" data-aos="zoom-in-up"  data-aos-duration="1000">
+            <article class="articles__article row" data-aos="zoom-in-up"  data-aos-duration="1000">
                 <img src="./img/home-article-2-img.svg"
                 alt="Ilustración de un grupo de hombres y mujeres de diferentes edades practicando poses de yoga"
-                class="articles__article__img">
-                <h2 class="articles__article__title">¡Animate! El Yoga es adecuado para todas las edades.</h2>
+                class="articles__article__img col-12 col-md-7">
+                <div class="articles__article__legend col-12 col-md-5 mt-3">
+                <h2 class="articles__article__title ">¡Animate! El Yoga es adecuado para todas las edades.</h2>
                 <p class="articles__article__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Vel
                     ducimus doloribus ex quasi eveniet quidem nulla, consequuntur sapiente unde, velit rem quae
                     dolor
                     facilis, laudantium ut quia blanditiis quis natus.</p>
                 </div>
+            </div>
                 <!-- fin articulo 2 -->
                 </div>
         </section>
@@ -109,8 +115,8 @@
 
             <!-- comienzo tarjetas -->
 
-            <div class="cards--container">
-                <div class="cards__element">
+            <div class="cards__container gap-3">
+                <div class="cards__element col-6 col-md-3">
                     <div class="cards__element__circle"><img src="./img/card-1-woman.jpg"
                             alt="mujer de unos 50 años en un jardín sonriendo a cámara" class="cards__element__img">
                     </div>
@@ -122,7 +128,7 @@
 
                 </div>
 
-                <div class="cards__element">
+                <div class="cards__element  col-6 col-md-3">
                     <div class="cards__element__circle"><img src="./img/card-2-man.jpg"
                             alt="Hombre de unos 30 años con gorra de béisbol hacia atrás en la playa"
                             class="cards__element__img"></div>
@@ -133,7 +139,7 @@
                         est numquam quam culpa eum? Nemo, tempora unde."</p>
                 </div>
 
-                <div class="cards__element">
+                <div class="cards__element col-6 col-md-3">
                     <div class="cards__element__circle"><img src="./img/card-3-woman.jpg"
                             alt="Mujer jóven con vestido floreado y cartera transparente" class="cards__element__img">
                     </div>
@@ -144,7 +150,7 @@
                         est numquam quam culpa eum? Nemo, tempora unde."</p>
                 </div>
 
-                <div class="cards__element">
+                <div class="cards__element  col-6 col-md-3">
                     <div class="cards__element__circle"><img src="./img/card-4-man.jpg"
                             alt="Hombre de mayor edad, canoso, sonriendo a cámara" class="cards__element__img"></div>
                     <h3 class="cards__element__name">Pedro Peiretti</h3>
@@ -165,10 +171,10 @@
     <!-- Fin del Main -->
 
     <!-- Comienzo del footer -->
-    <footer class="footer">
+    <footer class="footer row justify-content-center">
 
         <!-- comienzo links navegación footer -->
-        <div class="footer__links">
+        <div class="footer__links col-12 col-md-2">
             <ul class="footer__links_ul">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./pages/clases.html">Clases</a></li>
@@ -176,11 +182,12 @@
                 <li><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
+            </div>
         </div>
         <!-- fin links navegación footer -->
 
         <!-- comienzo links RRSS -->
-        <div class="footer__social-media">
+        <div class="footer__social-media col-12 col-md-3">
             <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook-icon.svg"
                     alt="icono de Facebook" class="footer__social-media__icon"></a>
             <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram-icon.svg"
@@ -199,7 +206,7 @@
         <!-- fin links RRSS -->
 
         <!-- comienzo mapa -->
-        <div class="footer__map">
+        <div class="footer__map col-12 col-md-3">
             <h5 class="footer__map__title">Dónde estamos</h5>
             <iframe class="footer__map__iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.8429876284445!2d-60.71300745062396!3d-31.63814911408482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9b791573657%3A0x262fe9abab51729c!2sUrquiza%203156%2C%20S3000FFW%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1664635454639!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"
@@ -208,11 +215,11 @@
         <!-- fin mapa -->
 
         <!-- comienzo datos empresa -->
-        <div class="footer__business-card">
+        <div class="footer__business-card col-12 col-md-3 mt-3">
             <h5 class="footer__business-card__title">LOTUS - Espacio de Yoga</h5>
             <p class="footer__business-card__text">Av Urquiza 3156</p>
             <p class="footer__business-card__text">S300FFW - Santa Fe - Argentina</p>
-            <p class="footer__business-card__text"> info@lotusyoga.com</p>
+            <p class="footer__business-card__text"><a href="mailto:info@lotusyoga.com">info@lotusyoga.com</a></p>
             <p class="footer__business-card__text">(0342) 444-5555</p>
 
 

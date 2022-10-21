@@ -21,7 +21,6 @@ html {
 ul,
 ol {
     list-style: none;
-    /* Se agregan propiedades margin y padding para sobreescribir estilos de lista de bootstrap */
     margin: 0;
     padding: 0;
 }
@@ -107,15 +106,10 @@ nav a {
 /********* comienzo cover **********/
 .cover {
     background-color: #74C69D;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
 }
 
 .cover__legend {
-    padding: 1rem;
-    margin-bottom: 2rem;
+    align-self: center;
 }
 
 .cover__legend__title {
@@ -132,18 +126,10 @@ nav a {
     color: #ffffff;
     text-align: center;
     font-size: 1.2rem;
-    margin-top: 1rem;
 }
-
-.cover__img {
-    width: 85%;
-    animation: boths;
-}
-
 /********* fin cover **********/
 
 /* COMIENZO ARTÍCULOS DEL MAIN */
-
 .videoArticle__article{
     display: flex;
     flex-direction: column;
@@ -151,34 +137,25 @@ nav a {
     align-items: center;
     overflow: scroll;
 }
-
-.articles__article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 3rem;
+.articles__article__img {
+    max-height: 90vh;
 }
 
-.articles__article__img {
-    padding: 0.5rem;
-    width: 90%;
+.articles__article__legend{
+    align-self: center;
 }
 
 .articles__article__title {
     font-family: 'Alef', sans-serif;
     font-size: 1.4rem;
     text-align: center;
-    margin: 1rem;
 }
 
 .articles__article__text {
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
-    width: 85%;
     text-align: center;
 }
-
-
 
 /* FIN DE ARTÍCULOS DEL MAIN */
 
@@ -189,7 +166,7 @@ section .cards {
 
 .cards__intro {
     width: 90vw;
-    margin: auto;
+    margin: 2rem auto;
 }
 
 .cards__title {
@@ -205,24 +182,21 @@ section .cards {
     text-align: center;
 }
 
-.cards--container {
+.cards__container {
+    margin-top: 2rem;
     padding: 5rem;
     display: flex;
     flex-wrap: wrap;
-    min-width: min-content;
     justify-content: center;
     align-content: center;
-    gap: 1rem;
-    overflow: scroll;
 }
 
 .cards__element {
     min-width: min-content;
     max-width: 20%;
-    min-height: 52vh;
-    border: #0000006f 1.5px solid;
-    border-radius: 2%;
-    padding-top: rem;
+    min-height: vh;
+    border: 0.5px solid #264653;
+    border-radius: 3%;
     box-shadow: 3px 3px 3px hsla(197, 37%, 24%, 0.55);
     text-align: center;
     background-color: #ffffff;
@@ -311,18 +285,6 @@ section .cards {
 footer {
     background-color: #264653;
     padding: 1rem;
-    display: grid;
-    grid-gap: 10px;
-	grid-template-areas:
-        "rrss"
-        "nav"
-        "vcard"
-        "map";
-	grid-template-columns: fit-content;
-    gap: 0.5rem;
-    justify-items: stretch;
-	max-height: min-content;
-	width: inherit;
 }
 
 footer a {
@@ -339,7 +301,7 @@ footer a:active {
 }
 
 footer ul li {
-    margin: 10px;
+    padding: 0.7rem;
     font-weight: bolder;
 }
 
@@ -350,24 +312,15 @@ footer ul li:hover {
 
 .footer__links {
     font-family: 'Alef', sans-serif;
-    min-width: 200px;
     color: #ffffff;
     font-size: 1.3rem;
-    grid-area: nav;
-    align-self: center;
-    justify-self: center;
     text-align: center;
 }
 
-.footer__links__ul{
-    margin: 0;
-    padding: 0;
-}
-
 .footer__social-media {
-    grid-area: rrss;
+    margin: 1rem auto 1rem;
     min-width: 200px;
-    margin: 1.5rem auto;
+    align-self: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -375,7 +328,7 @@ footer ul li:hover {
 
 .footer__social-media__icon{
     height: 1.5rem;
-    margin: 0.8rem;
+    margin: 0.5rem;
 }
 .footer__social-media__icon:hover {
     transform: scale(1.5);
@@ -386,6 +339,7 @@ footer ul li:hover {
     grid-area: map;
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 .footer__map__title {
@@ -403,9 +357,8 @@ footer ul li:hover {
 }
 
 .footer__business-card {
-    grid-area: vcard;
+    align-self: center;
     text-align: center;
-    margin: 2rem;
 }
 
 .footer__business-card__title {
@@ -418,9 +371,9 @@ footer ul li:hover {
 .footer__business-card__text {
     color: #ffffff;
     font-family: 'Alef', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    margin: -0.1rem;
 }
-
 
 /* FIN DEL FOOTER */
 
@@ -430,8 +383,20 @@ footer ul li:hover {
 /* COMIENZO DE GALERÍA */
 
 .carousel{
-    padding: 2.5rem 0 2.5rem;
+    margin: 0.6rem;
+    text-shadow: 1px 1px 3px #264653;
 }
+.carousel-text{
+    font-family: 'Work sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+.carousel-title{
+    font-family: 'Alef', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 /* .gallery {
     margin: auto;
     padding: 2rem;
@@ -489,6 +454,24 @@ fieldset {
     margin: 15px;
 }
 
+.form-label{
+    font-family: 'Work Sans', sans-serif;
+    color: #264653;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+.form-check-label{
+    font-family: 'Work sans', sans-serif;
+    color: #264653;
+    font-size: 0.9rem;
+}
+.form-check-input:checked{
+    background-color: #74C69D
+}
 label {
     display: block;
     font-family: 'Alef', sans-serif;

@@ -54,9 +54,18 @@
     <main>
 
         <!-- comiezo de formulario -->
-        <div class="contact-form">
+    <section class="contact-form">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mariana López" required>
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com"
+                required>
+
+        </div>
+
+        <!-- <div class="contact-form">
             <fieldset>
-                <!-- comienzo datos personales -->
                 <label>Nombre: <input type="text" name="nombre" required class="input--block"
                         placeholder="Nombre"></label>
                 <label>Apellido: <input type="text" name="apellido" required class="input--block"
@@ -64,38 +73,46 @@
                 <label>Email: <input type="email" name="email" require class="input--block" placeholder="Email"></label>
                 <label>Celular <input type="tel" name="celular" maxlength="16" minlength="10" optional
                         placeholder="Ingresá tu celular sin 0 ni 15 (opcional)">
-                    <!-- fin datos personales -->
-            </fieldset>
-
-            <fieldset>
-                <!-- comienzo opciones -->
+            </fieldset> -->
+        
+            <label for="exampleFormControlInput1" class="form-label">Modalidad de clases</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="presencial">
+                <label class="form-check-label" for="inlineRadio1">Presencial</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="online">
+                <label class="form-check-label" for="inlineCheckbox2">Online</label>
+            </div>
+        </section>
+        <!-- <fieldset>
                 <label><input type="radio" name="presencialidad" class="input--inline"> Clases Online</label>
                 <label><input type="radio" name="presencialidad" class="input--inline"> Clases Presenciales</label>
                 <label>
                     <input type="checkbox" name="terms" class="input--inline" required>Recibir novedades
                 </label>
-                <!-- fin opciones -->
-            </fieldset>
+            </fieldset> -->
 
-            <!-- comienzo ultimo campo formulario -->
-            <label>Edad: <input type="number" name="edad" min="13" max="120" />
-            </label>
-            <label>¿Cómo conociste Lotus?
-                <select name="referrer">
-                    <option value="">Elegir una opción</option>
-                    <option value="1">Redes Sociales</option>
-                    <option value="2">Me contó un amigo</option>
-                    <option value="3">Publicidad TV/Radio/Vía Pública</option>
-                    <option value="4">Google</option>
-                </select>
-            </label>
-            <label>Dejanos tu mensaje:
-                <textarea name="bio" rows="100" cols="30"
-                    placeholder="Escribí acá tu mensaje, duda, sugerencia..."></textarea>
-            </label>
-            <input type="submit" value="Enviar Consulta" class="enviar">
-            </fieldset>
-            <!-- fin ultimo campo formulario -->
+        <!-- comienzo ultimo campo formulario -->
+        <label>Edad: <input type="number" name="edad" min="13" max="120" />
+        </label>
+        <label>¿Cómo conociste Lotus?
+            <select name="referrer">
+                <option value="">Elegir una opción</option>
+                <option value="1">Redes Sociales</option>
+                <option value="2">Me contó un amigo</option>
+                <option value="3">Publicidad TV/Radio/Vía Pública</option>
+                <option value="4">Google</option>
+            </select>
+        </label>
+        <label>Dejanos tu mensaje:
+            <textarea name="bio" rows="100" cols="30"
+                placeholder="Escribí acá tu mensaje, duda, sugerencia..."></textarea>
+        </label>
+        <input type="submit" value="Enviar Consulta" class="enviar">
+        </fieldset>
+        <!-- fin ultimo campo formulario -->
         </div>
         <!-- fin formulario -->
         </div>
