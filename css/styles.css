@@ -43,13 +43,6 @@ main {
     text-shadow: 1px 1px 3px #2646537b;
     font-family: 'Alef', sans-serif;
 }
-.navbar-brand{
-    justify-self: center;
-}
-
-.brand__logo {
-    margin: 8px;
-}
 
 .brand__logo:hover{
     transform: scale(1.1);
@@ -60,10 +53,7 @@ main {
     font-size: 2rem;
     color: #ffffff;
     font-weight: 600;
-    text-align: center;
-    align-self: center;
 }
-
 .nav-link{
     color: #ffffff;
     text-align: center;
@@ -136,7 +126,6 @@ nav a {
     align-self: center;
     padding: 2rem;
 }
-
 
 .articles__article__title {
     font-family: 'Alef', sans-serif;
